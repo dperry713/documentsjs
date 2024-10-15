@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Styling Demo</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            display: inline-block;
+            text-align: center;
+            line-height: 200px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box" onclick="changeColor(this)">Click me to change color</div>
+    <div id="box2" class="box" onmouseover="grow(this)" onmouseout="shrink(this)">Hover to grow</div>
+    <div id="box3" class="box">Double click to change shape</div>
+    <div id="box4" class="box">Right click to change text</div>
+    <button id="resetButton">Reset All</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
